@@ -1,29 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <h1="description" content="Celeste's Spring 2026 study abroad journal based in Madrid, Spain.">
-    <title>Destination Tier List — elsewhere, with celeste.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celeste's Spring 2026 study abroad journal based in Madrid, Spain.">
+    <title>Destination Tier List: Elsewhere, with celeste.</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="topline">
-    <div class="wrap">
-        <span>Madrid, Spain · Spring 2026</span>
-        <span class="right">A scrapbook of places, people & in-between moments</span>
-    </div>
-</div>
-
 <header class="nav">
-    <div class="wrap navinner">
+    <div class="bar tab">
         <a class="brand" href="index.html">elsewhere, <span>with celeste.</span></a>
         <button class="menu-toggle" aria-label="Open navigation">Menu +</button>
         <nav class="navlinks">
             <a href="index.html">Home</a>
-            <a href="blog.html">Travel Journal</a>
             <a class="active" href="rankings.html">Tier List</a>
             <a href="destinations.html">Destinations</a>
             <a href="gallery.html">Gallery</a>
-            <a href="about.html">About & Tips</a>
+            <a href="about.html">About and Tips</a>
         </nav>
     </div>
 </header>
@@ -31,9 +27,42 @@
 <main>
     <section class="page-hero">
         <div class="wrap">
-            <div class="eyebrow">Completely subjective · lovingly opinionated</div>
-            <h1>The tier list<span>.</span></h1>
-            <p>A personal ranking of the destinations I visited during my Spring 2026 semester abroad. This is about my experience — not an objective score of a city or its people. A different season, itinerary, or travel companion could change everything.</p>
+            <div class="page-hero-grid">
+
+                <!-- Text on the left -->
+                <div class="page-hero-text">
+                    <h1>The tier list<span>.</span></h1>
+                    <p>A personal ranking of the destinations I visited during my Spring 2026 semester abroad. This is about my individual experience and the itinerary I created for each of my trips.</p>
+
+                    <!-- Madrid Travel Doc -->
+                    <div class="travel-doc">
+                        <p>
+                            For the full details behind these rankings, including my itineraries
+                            and travel notes, view my complete Madrid travel document.
+                        </p>
+                        <a class="button" href="https://docs.google.com/document/d/1a7sKAzZiSc-YDU1THHuXtWekaIQgLQuWYkBim0Qba1E/edit?tab=t.0" target="_blank" rel="noopener">
+                            View my Madrid Travel Doc!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo on the right (same tilted polaroid as the home page) -->
+                <a class="hero-art page-hero-art" href="gallery.html">
+                    <img src="camel.jpeg" alt="Celeste and friends riding camels through the Sahara Desert">
+                </a>
+
+            </div>
+
+            <!-- The Tier Hierarchy -->
+            <h3>The Tier Hierarchy</h3>
+            <ul class="tier-key">
+                <li><span class="tier s">S TIER</span> The elite, best-in-class, or must-have choice.</li>
+                <li><span class="tier a">A TIER</span> Excellent and high quality, just a step below S.</li>
+                <li><span class="tier b">B TIER</span> Good and solid, though not extraordinary.</li>
+                <li><span class="tier c">C TIER</span> Average or middle-of-the-pack.</li>
+                <li><span class="tier d">D TIER</span> Below average and generally avoided.</li>
+                <li><span class="tier f">F TIER</span> Failing or the absolute worst.</li>
+            </ul>
         </div>
     </section>
 
@@ -41,129 +70,182 @@
         <div class="wrap">
             <div class="section-head">
                 <div>
-                    <div class="eyebrow">S → F</div>
-                    <h2>How I rank a place.</h2>
+                    <div class="eyebrow">S to F</div>
+                    <h2>How I rank a place<span class="dot">.</span></h2>
                 </div>
-                <p>Filter by tier or search by destination. The original itinerary lists nine countries and fourteen destinations; this page records the rankings provided in my travel notes.</p>
             </div>
 
-            <div class="filterbar" data-filter-group>
-                <button class="filter-btn active" data-filter="all">All destinations</button>
-                <button class="filter-btn" data-filter="S">S tier</button>
-                <button class="filter-btn" data-filter="A">A tier</button>
-                <button class="filter-btn" data-filter="B">B tier</button>
-                <button class="filter-btn" data-filter="C">C tier</button>
-                <button class="filter-btn" data-filter="D">D tier</button>
-                <input class="search" data-search placeholder="Search destination or country…" aria-label="Search destinations">
-            </div>
 
             <div class="grid3">
                 
                 <!-- S TIER ITEMS -->
                 <article class="destination-card" data-category="S" data-searchable>
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Milan & Lake Como" loading="lazy">
+                        <img src="IMG_7675.jpeg" alt="Lake Como" loading="lazy">
                     </div>
                     <div class="card-body">
                         <div class="card-meta"><span>Italy</span><span class="tier s">S TIER</span></div>
-                        <h3>Milan & Lake Como</h3>
-                        <div class="small muted mono">Mar 31 through Apr 4</div>
-                        <p>A standout mix of dramatic scenery, lakeside towns, and a trip that felt special from start to finish.</p>
+                        <h3>Lake Como</h3>
+                        <div class="small text">Mar 31 through Apr 4</div>
+                        <p>My solo trip, planned entirely by me during my spring break or otherwise known as, "semana santa." I stayed in Menaggio. I explored Bellagio, Varenna, Villa del Balbianello, Tremezzo, and a final stop at the Milan Cathedral. Absolutely beautiful.</p>
                     </div>
                 </article>
 
                 <article class="destination-card" data-category="S" data-searchable>
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=900&q=80" alt="Marrakesh & Sahara Desert" loading="lazy">
+                        <img src="morrocco.jpeg" alt="Marrakesh and Sahara Desert" loading="lazy">
                     </div>
                     <div class="card-body">
                         <div class="card-meta"><span>Morocco</span><span class="tier s">S TIER</span></div>
-                        <h3>Marrakesh & Sahara Desert</h3>
-                        <div class="small muted mono">Apr 15 through 19</div>
-                        <p>A memorable contrast of color, culture, landscape, and stillness. City Life Madrid trip; guide Adam was excellent.</p>
+                        <h3>Marrakesh and Sahara Desert</h3>
+                        <div class="small text">Apr 15 through 19</div>
+                        <p>A <a class="inline-link" href="https://www.citylifemadrid.com/trips/#trips-agenda" target="_blank" rel="noopener">City Life Madrid</a> tour through the Atlas Mountains, Ait Ben Haddou, and Todra Canyon to a Berber camp, with camels, sandboarding, and a sunrise dune climb. Our guide Adam was awesome. Best decision ever.</p>
                     </div>
                 </article>
 
                 <!-- A TIER ITEMS -->
                 <article class="destination-card" data-category="A" data-searchable>
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=80" alt="Barcelona" loading="lazy">
+                        <img src="IMG_9313.jpeg" alt="Barcelona" loading="lazy">
                     </div>
                     <div class="card-body">
                         <div class="card-meta"><span>Spain</span><span class="tier a">A TIER</span></div>
                         <h3>Barcelona</h3>
-                        <div class="small muted mono">Jan 30 through Feb 1</div>
-                        <p>A vibrant city break with a strong mix of architecture, food, and Mediterranean energy.</p>
+                        <div class="small text">Jan 30 through Feb 1</div>
+                        <p>Sagrada Família (100% worth it), Casa Batlló, Casa Milà, Barceloneta Beach, and the Raluy circus, literally the best circus ever.</p>
                     </div>
                 </article>
 
                 <article class="destination-card" data-category="A" data-searchable>
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80" alt="London" loading="lazy">
-                    </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span>England</span><span class="tier a">A TIER</span></div>
-                        <h3>London</h3>
-                        <div class="small muted mono">Feb 26 through Mar 2</div>
-                        <p>A long weekend full of neighborhoods, landmarks, and big-city atmosphere.</p>
-                    </div>
-                </article>
-
-                <article class="destination-card" data-category="A" data-searchable>
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=80" alt="Madrid" loading="lazy">
+                        <img src="madrid.jpeg" alt="Madrid" loading="lazy">
                     </div>
                     <div class="card-body">
                         <div class="card-meta"><span>Spain</span><span class="tier a">A TIER</span></div>
                         <h3>Madrid</h3>
-                        <div class="small muted mono">Home base · Jan through May</div>
-                        <p>Not just a destination: it became my everyday life, routines, favorite cafés, and home abroad.</p>
+                        <div class="small text">Home base · Jan through May</div>
+                        <p>Madrid became my everyday life and home abroad, from coffee at Monkee Koffee and La Postalera to the best dinner at Swiss Butter.</p>
                     </div>
                 </article>
 
                 <!-- B TIER ITEMS -->
                 <article class="destination-card" data-category="B" data-searchable>
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=80" alt="Lisbon & Porto" loading="lazy">
+                        <img src="IMG_2765.jpeg" alt="London" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span>England</span><span class="tier b">B TIER</span></div>
+                        <h3>London</h3>
+                        <div class="small text">Feb 26 through Mar 2</div>
+                        <p>A long weekend that was all about the food. In between meals I saw the Tower of London, Borough Market, London Bridge, Big Ben, and Buckingham Palace, then spent the nights at The Roxy.</p>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="B" data-searchable>
+                    <div class="card-image">
+                        <img src="porto.jpeg" alt="Porto" loading="lazy">
                     </div>
                     <div class="card-body">
                         <div class="card-meta"><span>Portugal</span><span class="tier b">B TIER</span></div>
-                        <h3>Lisbon & Porto</h3>
-                        <div class="small muted mono">Feb 20 through 22</div>
-                        <p>Beautiful and memorable, though splitting time between two cities makes the weekend feel quick.</p>
+                        <h3>Porto</h3>
+                        <div class="small text">Feb 20 through 22</div>
+                        <p>The second half of my Portugal weekend: an evening and a full day in Porto after a 2.5-hour, €6 bus ride from Lisbon. I LOVED the traditional Portuguese ceramic tiles! Gorgeous!</p>
                     </div>
                 </article>
 
                 <article class="destination-card" data-category="B" data-searchable>
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="Nice" loading="lazy">
+                        <img src="IMG_4355 3.jpeg" alt="Celeste overlooking the harbor in Monaco" loading="lazy">
                     </div>
                     <div class="card-body">
-                        <div class="card-meta"><span>France</span><span class="tier b">B TIER</span></div>
-                        <h3>Nice</h3>
-                        <div class="small muted mono">Mar 14 through 16</div>
-                        <p>A lovely coastal change of pace and a good base for the French Riviera.</p>
+                        <div class="card-meta"><span>Monaco</span><span class="tier b">B TIER</span></div>
+                        <h3>Monaco</h3>
+                        <div class="small text">Mar 14 through 16</div>
+                        <p>A day across the border for the Monaco F1 Inside Track tour and a private walking tour. So cool to see this in person!</p>
                     </div>
                 </article>
 
                 <article class="destination-card" data-category="B" data-searchable>
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=80" alt="Segovia" loading="lazy">
+                        <img src="segovia.PNG" alt="Segovia" loading="lazy">
                     </div>
                     <div class="card-body">
                         <div class="card-meta"><span>Spain</span><span class="tier b">B TIER</span></div>
                         <h3>Segovia</h3>
-                        <div class="small muted mono">Mar 25–28</div>
-                        <p>A rewarding Spanish day trip with history, walkability, and distinctive landmarks.</p>
+                        <div class="small text">Day trip from Madrid</div>
+                        <p>An easy day trip, about an hour from madrid via bus ride. This castle inspired the creation of the Disney castle which I thought was so awesome!</p>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="B" data-searchable>
+                    <div class="card-image">
+                        <img src="avila.jpeg" alt="Ávila" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span>Spain</span><span class="tier b">B TIER</span></div>
+                        <h3>Ávila</h3>
+                        <div class="small text">Day trip from Madrid</div>
+                        <p>About 90 minutes from Madrid, this walled medieval city made for a rewarding day trip. The city was so peaceful.</p>
                     </div>
                 </article>
 
                 <!-- C TIER ITEMS -->
                 <article class="destination-card" data-category="C" data-searchable>
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=900&q=80" alt="Amsterdam" loading="lazy">
+                        <img src="nice.jpeg" alt="Nice" loading="lazy">
                     </div>
                     <div class="card-body">
-                        <div class="card-meta"><span>Netherlands</span><span class="tier c">C TIER</span></div>
+                        <div class="card-meta"><span>France</span><span class="tier c">C TIER</span></div>
+                        <h3>Nice</h3>
+                        <div class="small text">Mar 14 through 16</div>
+                        <p>Truffle ravioli at Le Grand Balcon and gelato at Fenocchio. It was just cold and slightly more crowded then expected. I wish I was able to walk on the beach without being hurt by rocks.</p>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="C" data-searchable>
+                    <div class="card-image">
+                        <img src="lisbon.jpeg" alt="Lisbon" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span>Portugal</span><span class="tier c">C TIER</span></div>
+                        <h3>Lisbon</h3>
+                        <div class="small text">Feb 20 through 22</div>
+                        <p> I love the atmosphere in Lisbon! Pastel de Natas were great! It just felt a lot like San Francisco with the enormous hills!</p>
+                    </div>
+                </article>
+
+                <!-- D TIER ITEMS -->
+                <article class="destination-card" data-category="D" data-searchable>
+                    <div class="card-image">
+                        <img src="amsterdam.jpeg" alt="Amsterdam" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span>Netherlands</span><span class="tier d">D TIER</span></div>
                         <h3>Amsterdam</h3>
-                        <div class="small muted mono">Feb 13 through 16</div>
+                        <div class="small text">Feb 13 through 16</div>
+                        <p>Paired with Brussels but I was not able to see Amsterdam during the day. It was EXTREMELY cold. We took a canal cruise and tried Dutch crepes. </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="wrap footer-inner">
+        <div>
+            <a class="brand" href="index.html">
+                elsewhere, <span>with celeste.</span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- About Me button (fixed to the bottom right corner) -->
+<a class="button about-button" href="about.html">About me</a>
+
+
+</body>
+</html>
